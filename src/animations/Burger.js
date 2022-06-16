@@ -1,7 +1,13 @@
 import * as React from 'react';
-import {View, StyleSheet, TouchableOpacity, Animated} from 'react-native';
+import {
+  View,
+  StyleSheet,
+  TouchableOpacity,
+  Animated,
+  StatusBar,
+} from 'react-native';
 
-import {Card, Text} from 'react-native-paper';
+import {Card, ActivityIndicator} from 'react-native-paper';
 
 const Burger = ({isOpen, onPress}) => {
   const [animatedValue] = React.useState(
@@ -109,6 +115,7 @@ export default function AnimatedBurger() {
 
   return (
     <View style={styles.container}>
+      <StatusBar barStyle="dark-content" />
       <Card style={{width: '80%', height: '80%'}}>
         <Burger
           isOpen={isOpen}
