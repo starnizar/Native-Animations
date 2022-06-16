@@ -19,7 +19,7 @@ const Burger = ({isOpen, onPress}) => {
     currentAnimation.current?.start();
     currentAnimation.current = Animated.timing(animatedValue, {
       toValue: isOpen ? 1 : 0,
-      duration: 300,
+      duration: 400,
       useNativeDriver: false,
     });
     currentAnimation.current.start();
