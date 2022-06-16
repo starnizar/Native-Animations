@@ -5,7 +5,7 @@ import AnimatedBurger from './src/animations/Burger';
 const App = () => {
   return (
     <SafeAreaView style={styles.mainContainer}>
-      <AnimatedBurger />
+      {/*<AnimatedBurger />*/}
     </SafeAreaView>
   );
 };
