@@ -1,11 +1,11 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
-// import AnimatedBurger from './src/animations/Burger';
+import AnimatedBurger from './src/animations/Burger';
 
 const App = () => {
   return (
     <SafeAreaView style={styles.mainContainer}>
-      {/*<AnimatedBurger />*/}
+      <AnimatedBurger />
     </SafeAreaView>
   );
 };
